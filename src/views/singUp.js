@@ -123,7 +123,9 @@ export const registrar = () => {
           const errorEmailInUse = document.querySelector('.requisito-emailInUse');
           errorEmailInUse.style.display = 'block';
         } else if (
-          error.message === 'Firebase: Password should be at least 6 characters (auth/weak-password).'
+          // eslint-disable-next-line operator-linebreak
+          error.message ===
+          'Firebase: Password should be at least 6 characters (auth/weak-password).'
         ) {
           const requisito = document.querySelector('.requisito');
           requisito.style.display = 'none';
